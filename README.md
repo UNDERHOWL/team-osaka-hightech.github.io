@@ -84,7 +84,7 @@ yaml 形式のインデントに注意を払い、元のインデントを破壊
 
 <!-- .slide vertical=true -->
 
-写好之后和改配置的操作类似，点 Commit 提交。现在再访问你的博客，可以发现你的博文已经出现在归档页的最上面了！Enjoy~
+書き込んだ後は、構成を変更する場合と同様の操作で、[コミット] をクリックして送信します。もう一度ブログにアクセスすると、ブログ投稿がアーカイブ ページの上部に表示されていることがわかります。楽しんで～
 
 <!-- .slide vertical=true -->
 
@@ -94,17 +94,17 @@ yaml 形式のインデントに注意を払い、元のインデントを破壊
 
 ## 进一步定制
 
-以上所有操作均可直接在 github 网页上进行。如果你在本地运行博客的测试，或是对博客进行更高级别的定制，推荐先阅读以下几篇博文：
+上記のすべての操作は、github Web サイトで直接実行できます。ブログ テストをローカルで実行する場合、またはブログの高度なカスタマイズを実行する場合は、最初に次のブログ投稿を読むことをお勧めします。
 
-- [基于 Jekyll 搭建个人博客](https://wu-kan.cn/_posts/2019-01-18-%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
-- [个人网站优化之旅](https://wu-kan.cn/_posts/2020-02-06-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85/)
+-[Jekyll ベースの個人ブログを作成](https://wu-kan.cn/_posts/2019-01-18-%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
+- 【個人サイト最適化ツアー】(https://wu-kan.cn/_posts/2020-02-06-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96%E4%B9%8B%E6%97%85/)
 
 <!-- .slide vertical=true -->
 
-统一中文文案、排版的相关用法，降低团队成员之间的沟通成本，增强网站气质，推荐阅读：
+関連する中国語のコピーライティングと組版の使用法を統一し、チーム メンバー間のコミュニケーション コストを削減し、Web サイトの品質を向上させます。
 
-- [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md)
-- [Markdown 写作心得](https://wu-kan.cn/_posts/2020-01-18-Markdown%E5%86%99%E4%BD%9C%E5%BF%83%E5%BE%97/)
+- [中国語コピーライティングガイド北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md)
+- 【Markdown執筆経験】(https://wu-kan.cn/_posts/2020-01-18-Markdown%E5%86%99%E4%BD%9C%E5%BF%83%E5%BE%97/)
 
 <!-- .slide -->
 
@@ -116,27 +116,26 @@ yaml 形式のインデントに注意を払い、元のインデントを破壊
 
 <!-- .slide -->
 
-## 文件结构
+## ファイル構造
 
-我的主题主要实现了如下几种渲染页面的样式供选择。
+私のテーマは、主に次のスタイルのレンダリング ページを選択用に実装しています。
 
 <!-- .slide vertical=true -->
 
 ### `layout: default`
 
-基于[poole/lanyon](https://github.com/poole/lanyon)的页面，提供一个侧边栏和可随侧边栏移动的 warp。
-
+[poole/lanyon](https://github.com/poole/lanyon)のページを元に、サイドバーとサイドバーで移動できるワープを用意。
 <!-- .slide vertical=true -->
 
 ### `layout: page`
 
-基于`layout: default`，提供了一个标题栏`.masthead`和文本框的`.content`。
+「layout:default」に基づき、タイトルバー「.masthead」とテキストボックス「.content」を提供します
 
 <!-- .slide vertical=true -->
 
 ### `layout: comments`
 
-基于`layout: page`的留言页，留言插件使用了[Valine](https://valine.js.org/)。
+「layout: page」のメッセージページを元に、メッセージプラグインは[Valine](https://valine.js.org/)を利用しています。
 
 示例：<https://wu-kan.cn/comments/>
 
@@ -144,69 +143,69 @@ yaml 形式のインデントに注意を払い、元のインデントを破壊
 
 ### `layout: post`
 
-基于`layout: comments`的博文页，为每篇博文增加描述信息。
 
-示例：[基于 Jekyll 搭建个人博客](https://wu-kan.cn/_posts/2019-01-18-%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
+`layout: comments` のブログ投稿ページを基に、各ブログ投稿の説明情報を追加します。
+
+例: [Jekyll に基づいて個人ブログを作成する](https://wu-kan.cn/_posts/2019-01-18-%E5%9F%BA%E4%BA%8EJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
 
 <!-- .slide vertical=true -->
 
 ### `layout: merger`
 
-基于 merger 的打赏页。
+合併に基づく報酬ページ。
 
-示例：<https://wu-kan.cn/merger/>
+例: <https://wu-kan.cn/merger/>
 
 <!-- .slide vertical=true -->
 
 ### `layout: home`
 
-从`v3.1.0`版本开始，`layout: home`被我重写，基于[hakimel/reveal.js](https://github.com/hakimel/reveal.js)实现了一个简洁的展示页面，既可以作为博客的封面，也可以用作 presentation！
+`v3.1.0` バージョンから `layout:home` を私が書き直して、 [hakimel/reveal.js](https://github.com/hakimel/reveal.js) を基に簡潔な表示ページを実装しました。 )、ブログの表紙やプレゼンに！
 
-示例：[我的数图期末展示页](https://wu-kan.cn/_posts/2019-12-10-%E6%95%B0%E5%9B%BE%E6%9C%9F%E6%9C%ABProject/)
-
-<!-- .slide vertical=true -->
-
-向你的 markdown 文件中插入水平页面分隔符和垂直页面分隔符（可自定义），即可快速开始使用啦！可以以[本篇文档](https://github.com/wu-kan/jekyll-theme-WuK/blob/master/README.md)作为使用示例。
-
-推荐的分隔符是![垂直标签](data:image/webp;base64,UklGRswEAABXRUJQVlA4IMAEAABQHwCdASrAASAAPsVQo0unpKMhtJMt+PAYiWkAFsxLa9e8Eh/E96cqAGmyaFhk0Q5inYLCsACybyvNmNBBvQcWVFDythsQZJBVxehBlMwh1yaCph3TT2mmXBYK4xTe1NQkAXYTUqlqw5axNWj96M5T+rkKO1ITOC/HXVhXDuBiZLLWebQVjzeuOZZbVNTlj1mUAthhmVBOEZyvWrJ8MacmBcu/R1nhZXOFxgJcjRk0JUNUxVxkcJKLugO7TzsHe/ypmIXUjZkQM2B75gv0R2Il+croGEtWa9KC3jCQ50RDOiQz2gtg3d5JDES2HqfZoVXHDcmj31oyYgLAMsrs0kRz6oAAAP73mKTfMOCm35/b4Qk9coZRWF/gzyQ+AyJOWBfAGDv3SBErqzWPv1hFXtlNoLceJgqLqnLzOSUx7DiuK2wiJ4rUObsqOE+MT6+pGZhCQhIjAq7hVZOjFtXUAuXEvG0pwJn3iedUv/j455TijyrJJcdJMR4aqihWqaBMTcB4E2CcjQ1YdITOt7BzvuJ+ujCFC5gybqIFrv+7SeNt4xux7nEqq6ajkJwkXg4GutsosueU/0lBwh3UW/kFoOKFTWouPwbLGWdYI4WaIWshXeDv549gTc0PKD/FFeqPHd9aU++Hqu7JbmEMpa7CLPsaxQRgDGAHDfjva0DqroXr7gD7SHbIHeEEfGneh7wgYLGcN1wO6XpUnmZQSYhqvKZ3V9qh180B9n7/7ViGnOjPnLZHiR0DDUPN3WgNvLfdTtXrzTIIe4clZR4QBCJ98wGdOZEo3vv0y+I7HVPXcDzibfxpuyfoPCnOgMFmVLKMvwqIHgIWH4Yxzhv6efYiKAyOVNnQIosoOKsI/6mG1uzH9RjgDcJA7gTJvwpTq5ST0FKUdrVtY0F62jai3eqcWhQEg3Lp11W2z8+pOjpU/ALrHDFQB8eATgid4+lu9cquOn6D5jfkHAIOVSWNgW55QB3drAhCEqTZ2BCjIxzQeTTD50rZxGTSSv51QbMbOG6+OQp6X6mOuYlBPctjkYbTYITDV0ANyT/bH1ZYw0QN+qV9Z0FvgDMuixTGgm/WwRDroKqik4JL9Toro+xMQKUlbaftdxfIjkrmVDAALBD/bF26A3vTRtGP+KMgNDj2mqd9w3znrM/WQnqrtp2Dm7vLVmURPpLzofnbviwFz7LHSPwT7dz1tfOPPeJMunAM7Hl2bLMPJ53KZy9M0+ns7ylPJ5sYLNsrstwdy5/KgZi9nqhQ9rDGETCv9Jm01GiMBemXJa4EPD7VB1MCG2Ep+ibTIRNjQ/j3Q/HyNfUpwNQSJ4DEiG3ZKplHKFRdjwWz2jsVBl+S6T98wMG7WJKoOAv6UDHM1GJ814ICZRXKX8COWPCKvFJgPT+ohqrUYy2YxQvr/UUJoIRbX3xCmyL/Co484h4ADGRJ+pl9Dkv72GvAxR9Q9/lZzSNgkiess0mfv2ctlFaKnfQGhsE2g39w37DIR26xJi0rMtkey9YiaTl62hSm3uqrKSpidim0eDZJvLvHLTxHxoBOytnf9sZaUuEAC5/OAGcD86/cByTlWvPbvbnRPygoLSl8xEmg9IWpHnD/ETK2dClPiRsF+hfETqEtSAAA)和![水平标签](data:image/webp;base64,UklGRlwCAABXRUJQVlA4IFACAACQDwCdASrgACAAPpE8m0elo6KhLbVcALASCWkAEWHcpexmUsD6ZOiu5sdWJqej30kHAWtWgzm1NokVrmXtBduqdjf69Ky/YrEfEk+DW1QmKbH58l6EwOTfIUdlpA9FItaZ+aXOqRi7Lf8XoMSwIPubKewvVC8kbFKgsiWQMmHqL7KMBE8AAP79uypAcc+TWCg0wbbnBWWODDTzqFgLrrobgfk6sOqETmoC8PIIDAt2Si73oax5KbX3SwCtGFRuRBn1uMwQStgw0dWqf5biuBby+hCRVXsg1usfCXyC2TOzsYDX89EEII6pcuI+jyvREioCmAhUHo5uHUEi05r1rckaSHFG9jYaTLNpOSC2AFItW/sUZIgBsYz1EnDk0oPG0eaWfTD3p1pwNOapL3JUK52Kqqdpwi5L/UxF+qUPS+XVX5BA2AI2FjTkJXaN75DUdEQ04xq+fCz1hDcc9po5h4AJCmNGDJ+hBKvSAKeRvRzbAi/OgVFg4ZpozCToVa+MMYslTrUGCJC3goF1f379lpSUD12xat2I4lTC3UrAkcbYE8kvpy817kSb+lg4cD80TdS06oTGhQR5jhlw9m3Shctwj5MyQ9e4dnKfbvZGsjBiB/C4OS/yJT4yN6vSFq/P3DmpiG5pQYwGVZud0Sp4fQ/hK84KYIxfEfeZSTRvrrNcS83XqziGfuD2xXXkulIjKF2Wdo9SDsZ2v2owdj9PN6xprlnXo/lEUwI/dRpY0JscfYWYrWtPdn4aznDTfsXina6MeJvfZyJ+dktjvrCfSAAA)，这样可以和[vscode-markdown-preview-enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/presentation)的标记兼容，方便本地预览。
+例: [マイ ディジット チャートの最終プレゼンテーション ページ](https://wu-kan.cn/_posts/2019-12-10-%E6%95%B0%E5%9B%BE%E6%9C%9F%E6%9C%ABProject/)
 
 <!-- .slide vertical=true -->
 
-如果你希望使用它来渲染主页之外的页面，可以在你的 markdown 的 yaml 头中设置`layout: home`即可！当然，如果你不希望使用它来渲染主页，你也可以将主页的 layout 设置成其他的。
+横方向のページ セパレーターと縦方向のページ セパレーター (カスタマイズ可能) をマークダウン ファイルに挿入すると、すぐに使用を開始できます。 [このドキュメント] を使用できます。(https://github.com/wu-kan/jekyll-theme-WuK/blob/master/README.md)作为使用示例。
 
-想针对特定页面默认开启侧边栏？在 yaml 头中设置`jekyll-theme-WuK: default: sidebar: open: true`即可！
-
-想针对特定页面隐藏侧边栏？在 yaml 头中设置`jekyll-theme-WuK: default: sidebar: disable: true`即可！会覆盖`sidebar: open`的设置。
+おすすめのセパレーターは!【縦ラベル】(data:image/webp;base64,UklGRswEAABXRUJQVlA4IMAEAABQHwCdASrAASAAPsVQo0unpKMhtJMt+PAYiWkAFsxLa9e8Eh/E96cqAGmyaFhk0Q5inYLCsACybyvNmNBBvQcWVFDythsQZJBVxehBlMwh1yaCph3TT2mmXBYK4xTe1NQkAXYTUqlqw5axNWj96M5T+rkKO1ITOC/HXVhXDuBiZLLWebQVjzeuOZZbVNTlj1mUAthhmVBOEZyvWrJ8MacmBcu/R1nhZXOFxgJcjRk0JUNUxVxkcJKLugO7TzsHe/ypmIXUjZkQM2B75gv0R2Il+croGEtWa9KC3jCQ50RDOiQz2gtg3d5JDES2HqfZoVXHDcmj31oyYgLAMsrs0kRz6oAAAP73mKTfMOCm35/b4Qk9coZRWF/gzyQ+AyJOWBfAGDv3SBErqzWPv1hFXtlNoLceJgqLqnLzOSUx7DiuK2wiJ4rUObsqOE+MT6+pGZhCQhIjAq7hVZOjFtXUAuXEvG0pwJn3iedUv/j455TijyrJJcdJMR4aqihWqaBMTcB4E2CcjQ1YdITOt7BzvuJ+ujCFC5gybqIFrv+7SeNt4xux7nEqq6ajkJwkXg4GutsosueU/0lBwh3UW/kFoOKFTWouPwbLGWdYI4WaIWshXeDv549gTc0PKD/FFeqPHd9aU++Hqu7JbmEMpa7CLPsaxQRgDGAHDfjva0DqroXr7gD7SHbIHeEEfGneh7wgYLGcN1wO6XpUnmZQSYhqvKZ3V9qh180B9n7/7ViGnOjPnLZHiR0DDUPN3WgNvLfdTtXrzTIIe4clZR4QBCJ98wGdOZEo3vv0y+I7HVPXcDzibfxpuyfoPCnOgMFmVLKMvwqIHgIWH4Yxzhv6efYiKAyOVNnQIosoOKsI/6mG1uzH9RjgDcJA7gTJvwpTq5ST0FKUdrVtY0F62jai3eqcWhQEg3Lp11W2z8+pOjpU/ALrHDFQB8eATgid4+lu9cquOn6D5jfkHAIOVSWNgW55QB3drAhCEqTZ2BCjIxzQeTTD50rZxGTSSv51QbMbOG6+OQp6X6mOuYlBPctjkYbTYITDV0ANyT/bH1ZYw0QN+qV9Z0FvgDMuixTGgm/WwRDroKqik4JL9Toro+xMQKUlbaftdxfIjkrmVDAALBD/bF26A3vTRtGP+KMgNDj2mqd9w3znrM/WQnqrtp2Dm7vLVmURPpLzofnbviwFz7LHSPwT7dz1tfOPPeJMunAM7Hl2bLMPJ53KZy9M0+ns7ylPJ5sYLNsrstwdy5/KgZi9nqhQ9rDGETCv9Jm01GiMBemXJa4EPD7VB1MCG2Ep+ibTIRNjQ/j3Q/HyNfUpwNQSJ4DEiG3ZKplHKFRdjwWz2jsVBl+S6T98wMG7WJKoOAv6UDHM1GJ814ICZRXKX8COWPCKvFJgPT+ohqrUYy2YxQvr/UUJoIRbX3xCmyL/Co484h4ADGRJ+pl9Dkv72GvAxR9Q9/lZzSNgkiess0mfv2ctlFaKnfQGhsE2g39w37DIR26xJi0rMtkey9YiaTl62hSm3uqrKSpidim0eDZJvLvHLTxHxoBOytnf9sZaUuEAC5/OAGcD86/cByTlWvPbvbnRPygoLSl8xEmg9IWpHnD/ETK2dClPiRsF+hfETqEtSAAA)そして!【横ラベル】(data:image/webp;base64,UklGRlwCAABXRUJQVlA4IFACAACQDwCdASrgACAAPpE8m0elo6KhLbVcALASCWkAEWHcpexmUsD6ZOiu5sdWJqej30kHAWtWgzm1NokVrmXtBduqdjf69Ky/YrEfEk+DW1QmKbH58l6EwOTfIUdlpA9FItaZ+aXOqRi7Lf8XoMSwIPubKewvVC8kbFKgsiWQMmHqL7KMBE8AAP79uypAcc+TWCg0wbbnBWWODDTzqFgLrrobgfk6sOqETmoC8PIIDAt2Si73oax5KbX3SwCtGFRuRBn1uMwQStgw0dWqf5biuBby+hCRVXsg1usfCXyC2TOzsYDX89EEII6pcuI+jyvREioCmAhUHo5uHUEi05r1rckaSHFG9jYaTLNpOSC2AFItW/sUZIgBsYz1EnDk0oPG0eaWfTD3p1pwNOapL3JUK52Kqqdpwi5L/UxF+qUPS+XVX5BA2AI2FjTkJXaN75DUdEQ04xq+fCz1hDcc9po5h4AJCmNGDJ+hBKvSAKeRvRzbAi/OgVFg4ZpozCToVa+MMYslTrUGCJC3goF1f379lpSUD12xat2I4lTC3UrAkcbYE8kvpy817kSb+lg4cD80TdS06oTGhQR5jhlw9m3Shctwj5MyQ9e4dnKfbvZGsjBiB/C4OS/yJT4yN6vSFq/P3DmpiG5pQYwGVZud0Sp4fQ/hK84KYIxfEfeZSTRvrrNcS83XqziGfuD2xXXkulIjKF2Wdo9SDsZ2v2owdj9PN6xprlnXo/lEUwI/dRpY0JscfYWYrWtPdn4aznDTfsXina6MeJvfZyJ+dktjvrCfSAAA)，这样可以和[vscode-markdown-preview-enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/presentation)マークは互換性があり、ローカル プレビューに便利です。
 
 <!-- .slide vertical=true -->
 
-这是一个仍在开发的特性（主要是找不到美观精致的[展示主题](https://github.com/hakimel/reveal.js/tree/master/css/theme)），如果有建议/需求欢迎 issue！
+これを使用してホームページ以外のページをレンダリングしたい場合は、マークダウンの yaml ヘッダーに「layout: home」を設定できます。もちろん、ホームページのレンダリングに使用したくない場合は、ホームページのレイアウトを別のものに設定することもできます。
+
+特定のページでサイドバーをデフォルトで有効にしたいですか? yamlヘッダーに`jekyll-theme-WuK: default: sidebar: open: true`を設定！
+
+特定のページのサイドバーを非表示にしたいですか? yamlヘッダーに`jekyll-theme-WuK: default: sidebar: disable: true`を設定！ `sidebar: open` の設定を上書きします。
 
 <!-- .slide vertical=true -->
 
-更多的功能，请尽情探索[hakimel/reveal.js](https://github.com/hakimel/reveal.js)！~~例如，按 Esc 可以生成一个 ppt 大纲~~
+これはまだ開発中の機能です (主に、美しく精巧な [表示テーマ](https://github.com/hakimel/reveal.js/tree/master/css/theme) が見つからないためです)。提案があります/必要に応じて発行してください!
+<!-- .slide vertical=true -->
+
+より多くの機能については、お気軽に[hakimel/reveal.js](https://github.com/hakimel/reveal.js)を探索してください! ~~たとえば、Escキーを押してpptアウトラインを生成します~~
 
 <!-- .slide -->
 
 ## 初心
 
-我曾做什么？
+私が何をした？
 
-我正做什么？
+私は何をやっている？
 
-我想做什么？
+私は何をしたいですか?
 
-我该做什么？
+私は何をすべきか？
 
 <!-- .slide vertical=true -->
 
-> 章北海感到父亲的灵魂从冥冥中降落到飞船上，与他融为一体，他按动了操作界面上那个最后的按钮，心中默念出那个他用尽一生的努力所追求的指令：
+> 張北海は、父の魂が宇宙船に着陸し、彼と一つになったことを感じ、操作インターフェースの最後のボタンを押し、彼が人生のすべての努力で追求してきたコマンドを心の中で瞑想しました:
 >
-> “‘自然选择’，前进四！”
+> 「『自然選択』、4つ進め！」
 
 <!-- .slide vertical=true -->
 
-目标是打造一个尽可能简洁，而可定制内容又尽可能丰富的博客。如果有更好的建议，欢迎给我提 Issue！
+目標は、できるだけ簡潔でカスタマイズ可能なコンテンツが豊富なブログを作成することです。より良い提案があれば、Issue を送ってください。
 
 <!-- .slide -->
 
