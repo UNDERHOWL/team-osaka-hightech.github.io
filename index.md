@@ -115,3 +115,13 @@ School of Computer Science and Engineering, Sun Yat-sen University, Guangzhou
 - **Shell**, Familiar&Learning
 - **Git**, Familiar
 - **VSCode**, Familiar
+
+---
+layout: home
+---
+##大阪ハイテクロジー専門学校
+###Let's enjoy school life!!!
+---
+## Slide 2
+---
+## Slide 3
